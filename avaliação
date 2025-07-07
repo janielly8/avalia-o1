@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Soma {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita os dois números ao usuário
+        System.out.print("Digite o primeiro número: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Digite o segundo número: ");
+        int numero2 = scanner.nextInt();
+
+        // Realiza a soma
+        int resultado = numero1 + numero2;
+
+        // Exibe o resultado
+        System.out.println("A soma é: " + resultado);
+
+        scanner.close();
+    }
+}
+import java.util.Scanner;
+
+public class Atividade02 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Recebe a temperatura em Celsius
+        System.out.print("Digite a temperatura em Celsius: ");
+        double celsius = scanner.nextDouble();
+
+        // Converte para Fahrenheit e Kelvin
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        double kelvin = celsius + 273.15;
+
+        // Exibe os resultados
+        System.out.println("\n==== Conversão de Temperatura ====");
+        System.out.println("Temperatura em Celsius: " + celsius + "°C");
+        System.out.println("Temperatura em Fahrenheit: " + fahrenheit + "°F");
+        System.out.println("Temperatura em Kelvin: " + kelvin + "K");
+    }
